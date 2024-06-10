@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "ChatAI Copilot",
+  "version": "1.0",
+  "description": "Una extensión de navegador para usar un modelo de lenguaje open source como copiloto.",
+  "permissions": ["activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "imagenes/icon16.png",
+      "48": "imagenes/icon48.png",
+      "128": "imagenes/icon128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
